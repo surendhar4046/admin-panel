@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Dashboard from "./Dashboard";
 
 function App() {
+  const [showDashboard, setShowDashboard] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ textAlign: "center", marginTop: "50px" }}>
+      {!showDashboard ? (
+        <>
+          <h1>Welcome</h1>
+          <button
+            style={{ marginTop: "20px", padding: "10px 20px" }}
+            onClick={() => setShowDashboard(true)}
+          >
+            Go to Dashboard
+          </button>
+        </>
+      ) : (
+        <Dashboard />
+      )}
     </div>
   );
 }
