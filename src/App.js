@@ -8,7 +8,7 @@ function App() {
     <div style={{ textAlign: "center", marginTop: "50px" }}>
       {!showDashboard ? (
         <>
-          <h1>Welcome</h1>
+          <h1>WELCOME</h1>
           <button
             style={{ marginTop: "20px", padding: "10px 20px" }}
             onClick={() => setShowDashboard(true)}
