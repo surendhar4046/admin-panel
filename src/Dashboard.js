@@ -29,7 +29,7 @@ function Dashboard() {
   { 
     id: 4, 
     name: "🌻 Sunflower Glow", 
-    price: 40, 
+    price: 4440, 
     image: "https://images.pexels.com/photos/1961792/pexels-photo-1961792.jpeg?cs=srgb&dl=pexels-valeriya-1961792.jpg&fm=jpg" 
   },
   { 
@@ -173,7 +173,7 @@ function Dashboard() {
         />
       </div>
       <div style={{ margin: "10px" }}>
-        <input
+        <input 
           type="password"
           placeholder="Password"
           value={password}
