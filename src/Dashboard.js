@@ -93,7 +93,7 @@ function Dashboard() {
   // After login → show perfumes
   if (loggedIn) {
     return (
-      <div style={{ backgroundColor: "#fdf6f0", minHeight: "100vh", padding: "30px" }}>
+      <div style={{ backgroundColor: "#ECD5E3", minHeight: "100vh", padding: "30px" }}>
         <h2 style={{ textAlign: "center" }}>Welcome to Admin Panel</h2>
         <h3 style={{ textAlign: "center" }}>Manage Perfumes</h3>
 
@@ -102,11 +102,13 @@ function Dashboard() {
             <div
               key={perfume.id}
               style={{
+          
                 border: "2px solid #ddd",
                 borderRadius: "12px",
                 padding: "20px",
                 width: "250px",
-                backgroundColor: "#fff",
+       
+                backgroundColor: "#FFF0F1",
                 boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
                 textAlign: "center",
               }}
@@ -168,7 +170,7 @@ function Dashboard() {
 
   // LoginPage
   return (
-    <div style={{ backgroundColor: "#fef9f4", minHeight: "100vh", textAlign: "center", paddingTop: "100px" }}>
+    <div style={{ backgroundColor: "#D4F0F0", minHeight: "100vh", textAlign: "center", paddingTop: "100px" }}>
       <h2>Admin Login</h2>
       <div style={{ margin: "10px" }}>
         <input
